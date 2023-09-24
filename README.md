@@ -5,7 +5,7 @@
   <p>
     While we're working hard to bring our app to the city, your support can make a difference today. By donating, you're not only helping us maintain and improve the app but also demonstrating the demand for this valuable service. Every contribution counts, and together, we can make commuting in our city more convenient for everyone. Thank you for your generosity!
   </p>
-  <a style="font-size: 200px;" href="https://www.paypal.com/donate/?business=Z3D47GP5FFKHE&no_recurring=1&item_name=Empower+our+app%27s+journey+with+your+donation.+Every+bit+helps+us+improve+transit+for+all.+Thank+you%21&currency_code=CAD">Donate</a>
+  <a  href="https://www.paypal.com/donate/?business=Z3D47GP5FFKHE&no_recurring=1&item_name=Empower+our+app%27s+journey+with+your+donation.+Every+bit+helps+us+improve+transit+for+all.+Thank+you%21&currency_code=CAD"><p>Donate</p></a>
   <div></div>
   <p>
     This is a MERN application that allows authenticated users to view and purchase transit tickets. It uses Stripe to handle online payments securely via credit card. It also includes the ability to validate a user's ticket according to the ticket's expiry via the 'scanner' route.
