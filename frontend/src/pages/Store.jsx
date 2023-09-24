@@ -31,7 +31,7 @@ function Store() {
   const handleShow = () => setShow(true);
 
   const checkout = async () => {
-    await fetch('http://localhost:8000/checkout', {
+    await fetch('https://192.53.120.7:8000/checkout', {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'

@@ -11,7 +11,7 @@ const HomeScreen = () => {
     setButtonClicked(true);
 
     // Send a fetch request to '/' to trigger the middleware
-    fetch('http://localhost:8000', {
+    fetch('https://192.53.120.7:8000', {
       method: 'GET', // You can use 'POST' or other HTTP methods if needed
       headers: {
         'Content-Type': 'application/json', // Adjust this based on your middleware

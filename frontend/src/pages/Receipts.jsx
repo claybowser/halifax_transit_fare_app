@@ -110,7 +110,7 @@ const Receipts = () => {
   
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:8000/receipts', {
+        const response = await fetch('https://192.53.120.7:8000/receipts', {
           method: 'GET',
           credentials: 'include',
         });

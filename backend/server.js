@@ -2,7 +2,7 @@
 //Adult Pass = price_1NkfZILB0AdTCUhB2gVNjjWR
 //Senior Youth Pass = price_1NkfZyLB0AdTCUhB9bfAna0a
 //Child Pass = price_1NkfbBLB0AdTCUhBhD0z6G0c
-
+import path from 'path';
 import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
@@ -81,6 +81,16 @@ app.use((req, res, next) => {
     next(); // For all other routes, skip this middleware
   }
 });
+
+//PRODUCTION
+if (process.env.NODE_ENV === 'production'){
+  const __dirname = path.resolve();
+  app.use(express.static(path.join(__dirname, 'frontend/dist')));
+
+  app.get('*', (req, res)=> res.sendFile(path.resolve(__dirname, 'frontend', 'dist', 'index.html')));
+} else {
+  app.get('/',(req, res)=> res.send('Server is ready'));
+}
 
 // Define a route to capture user privacy info
 app.post('/capture-info', (req, res) => {
