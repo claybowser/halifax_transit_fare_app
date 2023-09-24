@@ -21,7 +21,7 @@ function Scannerv3() {
   
       try {
         // Send a POST request to http://localhost:8000/scan with the data.
-        const response = await fetch('https://192.53.120.7:8000/scan', {
+        const response = await fetch('https://192.53.120.7/scan', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
