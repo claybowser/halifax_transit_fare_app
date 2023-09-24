@@ -1,0 +1,47 @@
+body {
+  /* background-image: url("pride.jpg"); */
+    background-color: #f0f0f0 !important; /* Replace with your desired shade of grey */
+  }
+
+  
+
+  /* Add this CSS to your stylesheets */
+
+  @media (min-width: 800px) {
+    .nav-link {
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: 600 !important;
+      transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+  
+    .nav-link:hover {
+      box-shadow: inset 0px -3px 0px white;
+    }
+  }
+
+  .custom-button {
+    background-color: white !important;
+    color: #145481 !important;
+    border: 2px solid #145481 !important;
+    border-radius: 1px !important;
+    font-weight: 600 !important;
+  }
+
+  .custom-button:hover {
+    background-color: #145481 !important;
+    color: rgba(230, 230, 0)!important;
+    border: 2px solid transparent !important;
+    border-radius: 1px !important;
+    font-weight: 600 !important;
+  }
+
+  .custom-header {
+    background-color: #145481 !important;
+    color: rgba(230, 230, 0) !important;
+    border: 2px solid transparent !important;
+    border-radius: 1px !important;
+    font-weight: 600 !important;
+    padding: 5px !important;
+  }
+  
